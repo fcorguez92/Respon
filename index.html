@@ -2,27 +2,43 @@
   <head>
     <meta charset="UTF-8">
     <title>Fender</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
+
+
     <header>
       <nav>
         <ul>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Personaliza</a></li>
-          <li><a href="#">Historia</a></li>
-          <li><a href="#">Tienda</a></li>
-          <li><a href="#">Artistas</a></li>
-          <li><a href="#">Noticias</a></li>
+          <li class="dropdown">
+            <a href="#">Productos</a>
+            <ul class="dropdown-content">
+              <li><a href="#">Guitarras</a></li>
+              <li><a href="#">Bajos</a></li>
+              <li><a href="#">Amplificadores</a></li>
+              <li><a href="#">Accesorios</a></li>
+            </ul>
+          </li>
+          <li><a href="#featured">Personaliza</a></li>
+          <li><a href="#history">Historia</a></li>
+          <li><a href="#shop">Tienda</a></li>
+          <li><a href="#artists">Artistas</a></li>
+          <li><a href="#news">Noticias</a></li>
         </ul>
       </nav>
     </header>
     <main>
+
+
       <section id="banner">
         <h1>Tocar. Crear. Inspirar.</h1>
         <p>Desde guitarras eléctricas legendarias hasta amplificadores icónicos y más allá, nunca te conformes con menos que Fender.</p>
         <button>Explora</button>
       </section>
+
+
       <section id="featured">
         <h2>Productos destacados</h2>
         <div class="product-list">
@@ -43,6 +59,8 @@
           </div>
         </div>
       </section>
+
+
       <section id="custom">
         <h2>Personaliza tu instrumento</h2>
         <div class="custom-list">
@@ -60,16 +78,22 @@
           </div>
         </div>
       </section>
+
+
       <section id="history">
         <h2>Una breve historia de Fender</h2>
         <p>Fender Musical Instruments Corporation es la compañía que fabrica instrumentos musicales Fender. Fue fundada por Clarence Leonidas Fender en Fullerton, California, en 1946.</p>
         <button>Lee más</button>
       </section>
+
+
       <section id="shop">
         <h2>Visita nuestra tienda</h2>
         <p>Nuestra tienda en línea ofrece una amplia selección de guitarras eléctricas, bajos, amplificadores y accesorios Fender a precios competitivos.</p>
         <button>Explora la tienda</button>
       </section>
+
+
       <section id="artists">
         <h2>Artistas destacados</h2>
         <div class="artist-list">
@@ -90,43 +114,51 @@
           </div>
         </div>
       </section>
+
+
       <section id="news">
-        <h2>Noticias recientes</h2>
+        <h2>Latest News</h2>
         <div class="news-list">
-          <div class="news-item-col-6">
-            <img src="img/IMAGEN.jpg" alt="Noticia 1">
-            <h3>Noticia 1</h3>
-            <p>Descripción de la noticia 1</p>
+          <div class="news-item">
+            <h3>New Product Launch</h3>
+            <img src="https://via.placeholder.com/300x200" alt="Product Launch">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet magna vitae ipsum lobortis, et semper odio porttitor. Fusce maximus, tellus vel pretium ullamcorper, sapien metus faucibus augue, id euismod ex nisl non purus.</p>
+            <button>Read More</button>
           </div>
-          <div class="news-item-col-6">
-            <img src="img/IMAGEN.jpg" alt="Noticia 2">
-            <h3>Noticia 2</h3>
-            <p>Descripción de la noticia 2</p>
+          <div class="news-item">
+            <h3>Upcoming Event</h3>
+            <img src="https://via.placeholder.com/300x200" alt="Upcoming Event">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet magna vitae ipsum lobortis, et semper odio porttitor. Fusce maximus, tellus vel pretium ullamcorper, sapien metus faucibus augue, id euismod ex nisl non purus.</p>
+            <button>Read More</button>
           </div>
         </div>
       </section>
-    </main>
+
+
     <footer>
       <div class="container">
-        <div class="logo">
-          <img src="img/IMAGEN.jpg" alt="Logo Fender">
-        </div>
-        <div class="contact-col12">
-          <h3>Contacto</h3>
-          <p>123 Main St., Hollywood CA 90028</p>
-          <p>info@fender.com</p>
-          <p>1-800-555-5555</p>
-        </div>
-        <div class="social-media">
-          <h3>Redes sociales</h3>
-          <ul>
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <h4>Contacto</h4>
+            <ul>
+              <li><a href="tel:+1234567890">123-456-7890</a></li>
+              <li><a href="mailto:info@ejemplo.com">info@ejemplo.com</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h4>Síguenos</h4>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h4>Disclaimer</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nulla et ante iaculis sagittis.</p>
+          </div>
         </div>
       </div>
-    </footer>
+    </footer>    
   </body>
 </html>    
