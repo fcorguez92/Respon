@@ -1,7 +1,9 @@
 html {
   background-color: #333;
 }
+
 /* Estilos para la barra de navegación */
+
 header {
   position: relative; 
   z-index: 30; 
@@ -21,14 +23,18 @@ nav ul {
   padding: 0;
   list-style: none;
   background-color: #333;
+
   /*overflow: hidden;*/
+
   display: flex;
   flex-wrap: wrap;
 }
 
+
 nav li {
   float: left;
 }
+
 
 nav li a {
   display: block;
@@ -39,15 +45,20 @@ nav li a {
   transition: all 0.3s ease;
 }
 
+
 nav li a:hover {
   background-color: #111;
   color: #fff;
 }
 
+
 /* Estilos para el menú desplegable */
+
+
 nav li.dropdown {
   display: inline-block;
 }
+
 
 @media only screen and (max-width: 767px) {
   nav {
@@ -65,6 +76,7 @@ nav li.dropdown {
   color: #f1f1f1;
 }
 
+
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -74,10 +86,12 @@ nav li.dropdown {
   color:#f1f1f1;
 }
 
+
 .dropdown-content a:hover {
   background-color: #f1f1f1;
   color:#111;
 }
+
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -91,9 +105,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
 h1, h2, h3 {
   margin: 0;
 }
+
 
 #banner {
   background-color: #333;
@@ -104,6 +120,7 @@ h1, h2, h3 {
   position: relative;
   z-index: 20;
 }
+
 
 @media only screen and (max-width: 768px) {
   header ul {
@@ -117,14 +134,17 @@ h1, h2, h3 {
   }
 }
 
-#featured, #custom, #history, #shop, #artists, #news {
+
+#featured, #custom, #history, #shop, #artists {
   background-color: #12103b;
   padding: 5vw;
   text-align: center;
   transition: all 0.5 ease;
   color: white;
 }
-#featured:hover, #custom:hover, #history:hover, #shop:hover, #artists:hover {
+
+
+#featured:hover, #custom:hover, #history:hover, #shop:hover, #artists:hover, #news:hover {
   background-color: #333;
   
 }
@@ -137,22 +157,27 @@ h1, h2, h3 {
   margin-top: 5vw;
 }
 
+
 .product-item-col-3, .custom-item-col-4, .artist-item-col-4, .news-item-col-6 {
   width: calc(100% / 3);
   margin: 5vw;
 }
 
+
 .custom-item-col-4, .artist-item-col-4 {
   width: calc(100% / 4);
 }
+
 
 .news-item-col-6 {
   width: calc(100% / 2);
 }
 
+
 img {
   max-width: 100%;
 }
+
 
 button {
   background-color: #344;
@@ -164,22 +189,22 @@ button {
   transition: background-color 0.3s ease;
 }
 
+
 button:hover {
   background-color: #111;
 }
 
+
 /* Estilos para la sección de noticias */
+
+
 #news {
-  background-color: #333;
+  background-color: #12103b;
   color: #fff;
   padding: 80px;
   text-align: center;
 }
 
-#news:hover{
-  background-color: #300;
-
-}
 
 .news-list {
   display: flex;
@@ -188,22 +213,27 @@ button:hover {
   margin-top: 50px;
 }
 
+
 .news-item {
   width: 45%;
   margin: 0 2.5% 30px 2.5%;
 }
 
+
 .news-item:first-child {
   margin-left: 0;
 }
+
 
 .news-item:last-child {
   margin-right: 0;
 }
 
+
 .news-item img {
   max-width: 100%;
 }
+
 
 @media only screen and (max-width: 768px) {
   .news-item {
@@ -214,15 +244,17 @@ button:hover {
 
 
 footer {
-  background-color: #333;
+  background-color: #355;
   color: #fff;
   font-size: 14px;
   padding: 30px 0;
 }
 
+
 footer h4 {
   margin-bottom: 15px;
 }
+
 
 footer ul {
   list-style: none;
@@ -230,14 +262,17 @@ footer ul {
   margin: 0;
 }
 
+
 footer ul li {
   margin-bottom: 5px;
 }
+
 
 footer ul li a {
   color: #fff;
   text-decoration: none;
 }
+
 
 @media (min-width: 768px) {
   footer .container {
@@ -245,3 +280,4 @@ footer ul li a {
     margin: 0 auto;
   }
 }
+
