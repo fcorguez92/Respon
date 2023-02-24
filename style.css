@@ -9,6 +9,16 @@ header {
   z-index: 30; 
 }
 
+#logo {
+  display: inline-block;
+  background: url("img/logo.svg") no-repeat center center;
+  background-color: white;
+  background-size: contain;
+  width: 65px; /* ajustar el ancho de la imagen según sea necesario */
+  height: 20px; /* ajustar la altura de la imagen según sea necesario */
+ 
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -107,6 +117,7 @@ body {
 
 
 h1, h2, h3 {
+   color:white;
   margin: 0;
 }
 
@@ -122,26 +133,6 @@ h1, h2, h3 {
 }
 
 
-@media only screen and (max-width: 768px) {
-  header ul {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  header li {
-    margin: 10px 0;
-  }
-  .news-item {
-    width: 90%;
-    margin: 0 5% 30px 5%;
-  }
-  .product-item-col-3{
-    width: 90%;
-    margin: 0 5% 30px 5%;
-  }
-
-}
 
 
 #featured, #custom, #history, #shop, #artists, #location {
@@ -245,46 +236,90 @@ button:hover {
 
 
 
+#contact-form textarea {
+  height: 100px;
+}
 
-footer {
-  background-color: #355;
+
+
+.footer-grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  background-color: #333;
   color: #fff;
-  font-size: 14px;
-  padding: 30px 0;
 }
 
-
-footer h4 {
-  margin-bottom: 15px;
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-
-footer ul {
+.footer-column ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-
-footer ul li {
+.footer-column ul li {
   margin-bottom: 5px;
 }
 
-
-footer ul li a {
+.footer-column ul li a {
   color: #fff;
   text-decoration: none;
 }
 
+.footer-column p:last-of-type {
+  margin-bottom: 0;
+}
 
+
+#contact {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+form {
+  
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color:white;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
 iframe {
   width: 100%;
+  background-color: #12103b;
   height: 400px;
   margin: 20px 0;
   border: 3px solid #006699; /* Añade un borde de 3px de ancho, sólido y de color azul */
   border-radius: 10px; /* Agrega bordes redondeados para que se vea más suave */
 }
+
 
 
 @media (min-width: 768px) {
@@ -319,6 +354,15 @@ iframe {
   .dropdown{
     width: 90%;
     
+  }
+  #contact {
+    padding: 50px 10px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
   }
 
 }
