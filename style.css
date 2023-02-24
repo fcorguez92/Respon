@@ -132,10 +132,19 @@ h1, h2, h3 {
   header li {
     margin: 10px 0;
   }
+  .news-item {
+    width: 90%;
+    margin: 0 5% 30px 5%;
+  }
+  .product-item-col-3{
+    width: 90%;
+    margin: 0 5% 30px 5%;
+  }
+
 }
 
 
-#featured, #custom, #history, #shop, #artists {
+#featured, #custom, #history, #shop, #artists, #location {
   background-color: #12103b;
   padding: 5vw;
   text-align: center;
@@ -144,7 +153,7 @@ h1, h2, h3 {
 }
 
 
-#featured:hover, #custom:hover, #history:hover, #shop:hover, #artists:hover, #news:hover {
+#featured:hover, #custom:hover, #history:hover, #shop:hover, #artists:hover, #news:hover, #location {
   background-color: #333;
   
 }
@@ -158,8 +167,8 @@ h1, h2, h3 {
 }
 
 
-.product-item-col-3, .custom-item-col-4, .artist-item-col-4, .news-item-col-6 {
-  width: calc(100% / 3);
+.product-item-col-3{
+  width: calc(100% / 4);
   margin: 5vw;
 }
 
@@ -235,12 +244,6 @@ button:hover {
 }
 
 
-@media only screen and (max-width: 768px) {
-  .news-item {
-    width: 90%;
-    margin: 0 5% 30px 5%;
-  }
-}
 
 
 footer {
@@ -274,6 +277,16 @@ footer ul li a {
 }
 
 
+
+iframe {
+  width: 100%;
+  height: 400px;
+  margin: 20px 0;
+  border: 3px solid #006699; /* Añade un borde de 3px de ancho, sólido y de color azul */
+  border-radius: 10px; /* Agrega bordes redondeados para que se vea más suave */
+}
+
+
 @media (min-width: 768px) {
   footer .container {
     max-width: 960px;
@@ -281,3 +294,31 @@ footer ul li a {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  header ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  header li {
+    margin: 10px 0;
+  }
+  .news-item {
+    width: 90%;
+    margin: 0 5% 30px 5%;
+  }
+  .product-item-col-3{
+    width: 90%;
+    margin: 0 5% 30px 5%;
+  }
+  .custom-item-col-4{
+    width: 90%;
+    margin: 0 5% 30px 5%;
+  }
+  .dropdown{
+    width: 90%;
+    
+  }
+
+}
